@@ -39,13 +39,15 @@ Module.register("MMM-EPLStandings", {
         table.className = "small";
 
         const headerRow = document.createElement("tr");
-        headerRow.innerHTML = `<th>#</th><th>Team</th><th>Points</th>`;
+        headerRow.innerHTML = `<th>#</th><th>Logo</th><th>Team</th><th>Points</th>`;
         table.appendChild(headerRow);
 
         this.standings.forEach((team, index) => {
             const row = document.createElement("tr");
+
             row.innerHTML = `
                 <td>${index + 1}</td>
+                <td><img src="${team.crest}" alt="${team.name}" class="team-logo"></td>
                 <td>${team.name}</td>
                 <td>${team.points}</td>
             `;
