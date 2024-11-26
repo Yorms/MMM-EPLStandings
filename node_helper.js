@@ -19,6 +19,7 @@ module.exports = NodeHelper.create({
                 .slice(0, maxTeams) // Get top teams
                 .map(team => ({
                     name: team.team.name,
+                    crest: team.team.crest, // Add logo URL
                     points: team.points
                 }));
 
