@@ -1,0 +1,15 @@
+.MMM-EPLStandings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.MMM-EPLStandings th,
+.MMM-EPLStandings td {
+    padding: 5px;
+    text-align: left;
+}
+
+.MMM-EPLStandings th {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
